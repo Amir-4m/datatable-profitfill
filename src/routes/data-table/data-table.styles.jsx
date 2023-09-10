@@ -1,78 +1,62 @@
 import styled from 'styled-components';
-import {Link} from 'react-router-dom';
 
-export const NavigationContainer = styled.div`
-  height: 70px;
-  display: flex;
-  width: 100%;
-  color: #fff;
-  background-color: #192937;
-  align-items: center;
-  padding: 7px;
-  font-family: Quicksand, sans-serif;
-  display: flex;
+export const DataTableContainer = styled.div`
+ 
 `
 
-export const ItemContainer = styled.div`
+export const DataTableHeader = styled.div`
+  background: #203243;
   width: 100%;
-  max-width: 1280px;
-  justify-content: space-between;
-  align-items: center;
-  margin-left: auto;
-  margin-right: auto;
-  display: flex;
-  color: #fff;
+  & h1 {
+    opacity: 1;
+    transform: translate3d(0px, 0px, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg);
+    transform-style: preserve-3d;
+    color: #fff;
+    letter-spacing: -.04em;
+    margin-top: 0;
+    margin-bottom: 0;
+    font-family: Quicksand, sans-serif;
+    font-size: 4rem;
+    line-height: 1.2;
+    width: fit-content;
+    margin: auto;
+    padding-top: 70px;
+    }
+    & span {
+    color: #46b8a5;
+    }
+    & p {
+    color: #fff;
+    font-size: 2rem;
+    font-weight: 500;
+    line-height: 1.5;
+    margin: auto;
+    text-align: center;
+    padding-top: 20px;
+    }
+`
 
+export const HeaderImage = styled.img`  
+width: 59%;
+`
+export const ImageContainer = styled.div`  
+`
+
+
+export const DataTableContent = styled.div`
+& h1 {
+    font-size: 2.2rem;
+    line-height: 1.2;
+    width: fit-content;
+    margin: auto;
+    padding-top: 70px;
 }
-`
-
-export const LogoContainer = styled(Link)`
-  height: 100 %;
-  width: 70px;
-  padding: 25px;
-`
-
-export const NavLinks = styled.div`
-  width: 50 %;
-  height: 100 %;
-  display: flex;
-  align - items: center;
-  justify - content: flex - end;
-  margin: auto;
-`
-
-export const NavLink = styled(Link)`
-  color: #fff;
-  letter-spacing: -.02em;
-  white-space: nowrap;
-  background-color: rgba(0, 0, 0, 0);
-  border-radius: 0.75rem;
-  padding: 8px 16px;
-  font-size: 16px;
-  font-weight: 700;
-  line-height: 24px;
-  text-decoration: none;
-  transition: all .35s;
-  &:hover {
-  color: #fff;
-  background-color: #213443;
-  border-radius: 0.75rem;
-  }
-
-`
-
-export const ButtonContainer = styled(Link)`
-  grid-column-gap: 8px;
-  align-items: center;
-  display: flex;
-  text-decoration: none;
-  margin: auto auto auto 10px;
-
-
-`
-export const BookButton = styled(Link)`
-
-`
-export const LoginButton = styled(Link)`
+& p {
+    font-size: 1.7rem;
+    line-height: 1.2;
+    width: fit-content;
+    margin: auto;
+    padding: 35px 0;
+}
 
 `

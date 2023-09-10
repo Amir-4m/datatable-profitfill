@@ -1,3 +1,9 @@
+/* color codes */
+$branded-green: #18a68e;
+$branded-dark-blue: #192937;
+$branded-black: #333;
+
+
 /* cyrillic-ext */
 @font-face {
   font-family: 'Inter';
@@ -569,9 +575,7 @@
 
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
+  font-family: Quicksand, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }

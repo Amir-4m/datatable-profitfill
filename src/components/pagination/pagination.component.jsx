@@ -1,15 +1,17 @@
-function PaginationControls({ currentPage, totalPages, onPageChange }) {
+import React from 'react';
+import { PaginationContainer, PaginationButton } from './pagination.styles';
+
+const PaginationControls = ({ currentPage, totalPages, onPageChange }) => {
   return (
-    <div>
-      <button onClick={() => onPageChange(currentPage - 1)} disabled={currentPage === 1}>
+    <PaginationContainer>
+      <PaginationButton onClick={() => onPageChange(currentPage - 1)} disabled={currentPage === 1}>
         Previous
-      </button>
+      </PaginationButton>
       <span>Page {currentPage} of {totalPages}</span>
-      <button onClick={() => onPageChange(currentPage + 1)} disabled={currentPage === totalPages}>
+      <PaginationButton onClick={() => onPageChange(currentPage + 1)} disabled={currentPage === totalPages}>
         Next
-      </button>
-    </div>
+      </PaginationButton>
+    </PaginationContainer>
   );
 }
-
 export default PaginationControls;
